@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  padding: 10px;
+}
+
+.nav { 
+    grid-area: 'nav'; 
+    grid-row: 1 / -1;
+}
+.main { grid-area: 'main'; }
+.footer { 
+    grid-area: 'footer'; 
+    grid-column: 2 / -1;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+    'nav main'
+    'nav footer';
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.nav {
+    border-right: 2px solid black;
+}
+
+.nav ul {
+    list-style-type: none;
+    text-align: left;
+    display: block;
+    padding: 0;
+    
+}
+
+
+
+
+
+
+
+
+
+/*
+@media screen and (max-width: 700px) {
+nav {
+    position: fixed;
+    text-align: left;
+}
+}
